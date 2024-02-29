@@ -26,13 +26,22 @@ function App() {
 				<Route path="/" element={<HomePage />} />
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/login" element={<LoginPage />} />
-				<Route
+				<Route path="/register" element={<RegisterPage />} />
+				<Route path="/profile" element={<ProfilePage />} />
+				<Route path="/admin/products" element={<AdminProductTablePage />} />
+				<Route path="/edit-profile" element={<EditProfilePage />} />
+				<Route path="/wishlist" element={<WishlistPage />} />
+				<Route path="/cart" element={<CartPage />} />
+				<Route path="/all-products" element={<ProductPage />} />
+				<Route path="/invoice" element={<Invoice />} />
+				{/* <Route
 					path="/register"
-					element={
-						isAuth && !isAdmin ? <HomePage /> : <RegisterPage />
-					}
-				/>
-				<Route
+					
+					// element={
+					// 	isAuth && !isAdmin ? <HomePage /> : <RegisterPage />
+					// }
+				/> */}
+				{/* <Route
 					path="/profile"
 					element={
 						isAuth && !isAdmin ? <ProfilePage /> : <LoginPage />
@@ -43,17 +52,17 @@ function App() {
 					element={
 						isAuth && !isAdmin ? <EditProfilePage /> : <LoginPage />
 					}
-				/>
-				<Route
+				/> */}
+				{/* <Route
 					path="/cart"
 					element={isAuth && !isAdmin ? <CartPage /> : <LoginPage />}
-				/>
-				<Route
+				/> */}
+				{/* <Route
 					path="/wishlist"
 					element={
 						isAuth && !isAdmin ? <WishlistPage /> : <LoginPage />
 					}
-				/>
+				/> */}
 				<Route
 					path="/all-products"
 					element={
@@ -79,12 +88,12 @@ function App() {
 					path="/admin/edit-product"
 					element={isAdmin ? <EditProductForm /> : <LoginPage />}
 				/>
-				<Route
+				{/* <Route
 					path="/admin/products"
 					element={
 						isAdmin ? <AdminProductTablePage /> : <LoginPage />
 					}
-				/>
+				/> */}
 				<Route
 					path="/admin/all-customers"
 					element={
